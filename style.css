@@ -24,12 +24,34 @@ body {
   padding: 18px 0 10px 0;
 }
 .logo img { height: 100px;
-margin-top: -15px; }
+margin-top: -30px;
+margin-bottom: -20px; 
+}
 
-.contact-info { text-align: right; }
-.call-now { color: #800000; font-weight: bold; font-size: 18px; letter-spacing: 1px; }
-.phone-number { font-size: 32px; font-weight: bold; color: #222; margin: 2px 0; }
-.tagline { color: #555; font-size: 14px; }
+.contact-info { 
+  text-align: right; 
+  margin-right: 10px;
+}
+
+.call-now { 
+  color: #800000; 
+  font-weight: bold;
+   font-size: 18px; 
+   letter-spacing: 1px;
+   
+   }
+
+.phone-number { 
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #222;
+   margin: 2px 0; 
+  }
+
+.tagline { 
+  color: #555; 
+  font-size: 14px;
+ }
 
 /* NAVIGATION */
 .nav-bar {
@@ -41,21 +63,20 @@ margin-top: -15px; }
   list-style: none;
   display: flex;
   justify-content:flex-end;
-  padding: 0 10px;
 }
 .nav-item {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  padding: 14px 22px;
+  padding: 10px 24px;
   display: block;
   font-size: 15px;
   letter-spacing: 1px;
 }
 .nav-item.active,
 .nav-item:hover {
-  background: #fff;
-  color: #800000;
+  background: #7e7979;
+  color: #ffffff;
 }
 
 /* HERO SECTION */
@@ -137,7 +158,6 @@ margin-top: -15px; }
   background: #800000;
   padding: 10px 24px 10px 24px;
   border-radius: 2px;
-  z-index: 4;
   min-width: 10px;
   min-height: 36px;
   display: flex;
@@ -148,24 +168,22 @@ margin-top: -15px; }
 .questions-label {
   color: #fff;
   font-weight: bold;
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin: 0;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
 }
 
 
 .form-title-main {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 0.1;
   color: #222;
-  margin-left: 250px;
- 
+  margin-left: 200px;
 }
 
 .form-title-main .highlight {
   color: #1a4e8a;
-
+font-size: 32px;
 }
 
 .form-title-sub {
@@ -173,27 +191,17 @@ margin-top: -15px; }
   font-weight: bold;
   line-height: 1.2;
   color: #222;
-  margin-top: 0;
-  margin-left: 250px;
+  margin-left: 200px;
 }
+
 .form-desc {
-  font-size: 14px;
+  font-size: 19px;
   color: #333;
   margin-bottom: 16px;
   margin-top: 2px;
 }
 
-.fake-form {
-  margin-top: 2px;
-  margin-bottom: 8px;
-  width: 100%;
-}
 
-.fake-field {
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-}
 
 .fake-label {
   font-size: 14px;
@@ -224,8 +232,8 @@ margin-top: -15px; }
   width: 700px;      
   max-width: 90%;      
   min-width: 120px;    
-  min-height: 48px;
-  border: 1.5px solid #888;
+  min-height: 80px;
+  border: 1.5px solid #a8a2a2;
   border-radius: 2px;
   padding: 10px 8px;
   font-size: 14px;
@@ -236,14 +244,17 @@ margin-top: -15px; }
 }
 
 .privacy-note {
-  font-size: 12px;
-  color: #888;
+  font-size: 15px;
+  color: #504d4d;
   margin-bottom: 8px;
   margin-top: -4px;
+  font-style: italic;
+  margin-left: -30px;
+  margin-right: 5px;
 }
 
 .btn-red.submit-btn {
-  width: 100%;
+  width: 60%;
   margin-top: 4px;
   font-size: 16px;
   padding: 10px 0;
@@ -264,11 +275,11 @@ margin-top: -15px; }
 .confidential-stamp {
   position: absolute;
   right: 60px;   
-  top: 150px;    
-  width: 140px;
+  top: 160px;    
+  width: 170px;
   opacity: 0.9;
   z-index: 5;
-  transform: rotate(35deg);
+  transform: rotate(10deg);
 }
 
 .fake-form {
@@ -286,7 +297,7 @@ margin-top: -15px; }
   font-size: 13px;
   font-weight: bold;
   color: #333;
-  min-width: 70px;
+  min-width: 50px;
   margin-right: 8px;
   white-space: nowrap;
 }
@@ -360,7 +371,7 @@ p {
 }
 .paste-img{
     width: auto;
-    height: 50px;
+    height: 60px;
     margin-left: 250px;
     margin-top: -120px;
     margin-bottom: -30px;
