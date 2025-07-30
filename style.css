@@ -8,8 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-
-
 /* HEADER */
 .header {
   background: #fff;
@@ -921,3 +919,242 @@ h1, p,.bold-red {
   display: block;
 }
 
+/* MOBILE (MAX-WIDTH 500PX) */
+@media (max-width: 500px) {
+ 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+  
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .logo img {
+    height: 80px;
+    margin: 10px 0;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .call-now {
+    font-size: 14px;
+  }
+  
+  .phone-number {
+    font-size: 28px;
+  }
+  
+  .tagline {
+    font-size: 13px;
+  }
+  
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  
+  .hero {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .hero-left, 
+  .hero-right {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .hero-banner {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    margin: 10px 0;
+  }
+  
+  .form-bg-img {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0 0 0;
+  }
+  
+  .form-text-overlay {
+    position: absolute;
+    padding: 10px;
+    background: rgba(255,255,255,0.9);
+  }
+  
+  .questions-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-bottom: 10px;
+    width: 50%;
+    justify-content: center;
+  }
+  
+  .form-title-main,
+  .form-title-sub,
+  .form-desc {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .form-title-main {
+    font-size: 14px;
+  }
+  
+  .form-title-sub {
+    font-size: 13px;
+  }
+  
+  .form-desc {
+    font-size: 14px;
+  }
+ 
+  .fake-field {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .fake-label {
+    margin: 5px 0 0 0;
+    white-space: normal;
+  }
+  
+  .fake-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .fake-textarea {
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+
+  .content-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .column {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .lower-content {
+    flex-direction: column;
+  }
+  
+  .practice-areas,
+  .main-content,
+  .right-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* SMALL TABLETS (480-767PX)  */
+@media (min-width: 480px) and (max-width: 767px) {
+  .logo img {
+    height: 100px;
+  }
+  
+  .call-now {
+    font-size: 16px;
+  }
+  
+  .phone-number {
+    font-size: 34px;
+  }
+  
+  .tagline {
+    font-size: 15px;
+  }
+  
+  .hero-banner,
+  .form-bg-img {
+    min-height: 250px;
+  }
+  
+  .form-title-main {
+    font-size: 20px;
+  }
+  
+  .column {
+    padding: 15px;
+  }
+}
+
+/*  LARGE TABLETS (768-1023PX)  */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-inner {
+    flex-wrap: nowrap;
+  }
+  
+  .logo img {
+    height: 120px;
+  }
+  
+  .call-now {
+    font-size: 18px;
+  }
+  
+  .phone-number {
+    font-size: 42px;
+  }
+  
+  .tagline {
+    font-size: 17px;
+  }
+  
+  .hero-left {
+    width: 55%;
+  }
+  
+  .hero-right {
+    width: 45%;
+  }
+  
+  .hero-banner,
+  .form-bg-img {
+    min-height: 300px;
+  }
+  
+  .form-title-main {
+    font-size: 22px;
+  }
+  
+  .content-container {
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 48%;
+    max-width: none;
+  }
+}
