@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADER */
 .header {
   background: #fff;
   border-bottom: 5px solid #800000;
@@ -21,9 +20,10 @@ body {
   align-items: center;
   padding: 18px 0 10px 0;
 }
-.logo img { height: 160px;
-margin-top: -30px;
-margin-bottom: -13px; 
+.logo img { 
+  height: 120px;
+  margin-top: -20px;
+  margin-bottom: -10px; 
 }
 
 .contact-info { 
@@ -35,7 +35,7 @@ margin-bottom: -13px;
 .call-now { 
   color: #800000; 
   font-weight: bold;
-   font-size: 25px; 
+   font-size: 30px; 
    letter-spacing: 1px;
    
    }
@@ -52,7 +52,7 @@ margin-bottom: -13px;
   font-size: 21.5px;
  }
 
-/* NAVIGATION */
+
 .nav-bar {
   background: #800000;
   width: 100%;
@@ -92,7 +92,6 @@ margin-bottom: -13px;
   align-items: center;
 }
 
-/* HERO SECTION */
 .hero {
   width: 100%;
   display: flex;
@@ -195,9 +194,9 @@ width: 50%;
   color: #222;
   margin-left: 180px;
   margin-top: 0;
+  white-space: nowrap;
 
 }
-
 
 .form-title-group {
   margin-top: -5px; 
@@ -206,7 +205,7 @@ width: 50%;
 
 .form-title-main .highlight {
   color: #1a4e8a;
-font-size: 40px;
+font-size: 28px;
 
 }
 
@@ -362,7 +361,6 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
 }
  
-/* Each column */
 .column {
   flex: 1;
   max-width: 500px;
@@ -394,13 +392,13 @@ p {
   font-size: 20px;
 }
 
-/* Button */
-
 .horizontal-line1 {
-  width: 80%;
+  width: 230px;
   height: 1px;               
   background: #888;           
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-left:215px;
+  margin-top: -5px;
   border: none;
   display: block;
 }
@@ -413,26 +411,31 @@ p {
   font-weight: bold;
   gap: 10px;
   border-radius: 2px;
-  margin: 10px auto;
-  display: block;
-  width: fit-content;
+  margin-top: -1px;
+  margin-left: auto;
+ position: relative;
+ margin-right: 10px;
 }
 
   .horizontal-line2 ,.horizontal-line3{
-    width: 80%;
+    width: 200px;
     height: 1px;               
     background: #888;           
-    margin: 10px auto;
+    margin: 0 auto;
     border: none;
     display: block;
+    margin-left:45px;
+    margin-top: -25px
   }
   .horizontal-line3{
-    width: 80%;
+    width: 230px;
     height: 1px;               
     background: #888;           
-    margin: 10px auto;
+    margin: 0 auto;
     border: none;
     display: block;
+    margin-left:45px;
+    margin-top: -20px
   }
 
   
@@ -443,18 +446,18 @@ p {
   padding: 8px 12px;
   font-size: 16px;
   font-weight: bold;
-  margin: 10px auto;
+  margin-block-end: 20px;
   width: fit-content;
-  display: block;
+  margin-left: 100px;
 }
 
 .horizontal-line4 {
-  width: 80%;
+  width: 220px;
   height: 1px;               
   background: #888;           
   border: none;
   display: block;
-  margin: 10px auto;
+  margin-left: 120px;
 }
    .click-button4 {
      background-color: rgb(151, 13, 13);
@@ -465,9 +468,10 @@ p {
      font-weight: bold;
      gap: 10px;
      border-radius: 2px;
-     margin: 10px auto;
-     display: block;
-     width: fit-content;
+     margin-top: -1px;
+     position: relative;
+     margin-left: 180px;
+     margin-right: auto;
    }
 
 /* LOWER CONTENT */
@@ -807,7 +811,7 @@ p {
   min-width: 250px;
 }
 
-/* Center the middle column content (LAW BLOG and CASE RESULTS) */
+
 .mid-section-col:nth-child(3) {
   align-items: center;
   text-align: center;
@@ -958,7 +962,7 @@ h1, p,.bold-red {
   }
   
   .call-now {
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .phone-number {
@@ -1145,14 +1149,16 @@ h1, p,.bold-red {
   .horizontal-line1{
     width: 50%;
     margin-bottom: 7px;
+    margin-left: 80px;
   }
   
   .click-button1{
-    margin-block-start: -4px;
-    margin-block-end: -8px;
-    display: block;
-    margin-top: -8px;
+   display: block;
+    margin: -8px;
+    width: 40%;
+    margin-left: 100px;
   }
+
   .click-button2,
   .click-button3,
   .click-button4 {
@@ -1176,9 +1182,312 @@ h1, p,.bold-red {
     text-align: center;
    
   }
-  .learn-more{
-    width: 100%;
-    text-align: center;
+    .learn-more{
+     width: 100%;
+     text-align: center;
   }
 
 }
+
+/* SMALL TABLETS (768-891PX) */
+@media (min-width: 768px) and (max-width: 891px) {
+  .header-inner {
+    flex-wrap: nowrap;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: 120%;
+  }
+  
+  .call-now {
+    font-size: 16px;
+  }
+  
+  .phone-number {
+    font-size: 38px;
+  }
+  
+  .tagline {
+    font-size: 16px;
+  }
+  
+  .hero-left {
+    width: 55%;
+  }
+  
+  .hero-right {
+    width: 45%;
+  }
+  
+  .hero-banner {
+    width: 95%;
+    min-height: 280px;
+  }
+  
+  .form-bg-img {
+    width: 110%;
+    min-height: 280px;
+  }
+  
+    .questions-box {
+    position: absolute;
+    left: 0;
+    margin-left: -40px;
+    top: 3px;
+  }
+
+  .form-title-group {
+    margin-top: 22px;
+  }
+  
+  .form-title-main,
+  .form-title-sub,
+  .form-desc {
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .form-title-main {
+   font-size: 14px;
+  }
+  
+  .form-title-sub {
+    font-size: 14px;
+    text-align: left;
+  }
+  .form-title-main .highlight{
+    font-size: 22px;
+  }
+  .form-desc {
+    font-size: 12px;
+  margin-left: -50px;
+  }
+  
+  .confidential-stamp {
+    width: 100px;
+    height: 50px;
+    top: 140px;
+    right: 40px;
+  }
+  
+  .privacy-note {
+    margin-left: 20px;
+  }
+  
+  .btn-red.submit-btn {
+    width: 100%;
+    margin-left: -20px;
+  }
+  
+  .mid-section-row {
+    flex-wrap: wrap;
+  }
+  
+  .mid-section-col {
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  
+  .mid-section-img-text h1,
+  .mid-section-img-text h2,
+  .mid-section-img-text p {
+    margin: 5px 0;
+    white-space: normal;
+  }
+  
+  .mid-section-img-text p {
+    font-size: 17px;
+  }
+  
+  .mid-section-img-text h2 {
+    font-size: 17px;
+  }
+  
+  .paste-img{
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+  }
+
+  .pic1-img,
+  .order-img {
+    width: 110px;
+    height: 90px;
+  }
+  
+  .qqq-img,
+  .national-img {
+    width: 90px;
+    height: 70px;
+  }
+  
+  .horizontal-line1,
+  .horizontal-line2,
+  .horizontal-line3,
+  .horizontal-line4 {
+    width: 65%;
+    margin: 10px auto;
+  }
+  
+  .click-button1,
+  .click-button2,
+  .click-button3,
+  .click-button4 {
+    width: 55%;
+    margin: 10px auto;
+  }
+  
+  .mid-section-divider-horizontal {
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .practice-area-content {
+    font-size: 14px;
+    margin-left: -5px;
+  }
+  
+  .learn-more-link {
+    font-size: 13px;
+  }
+}
+
+/*LARGE TABLETS (892px-1024PX) */
+@media (min-width: 892px) and (max-width:1024px) {
+  .header-inner {
+    flex-wrap: nowrap;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  .call-now {
+    font-size: 20px;
+    margin-left: -30px;
+  }
+  
+  .phone-number {
+    font-size: 42px;
+  }
+  
+  .tagline {
+    font-size: 17px;
+  }
+  
+  .hero-left {
+    width: 55%;
+  }
+  
+  .hero-right {
+    width: 45%;
+  }
+  
+  .hero-banner,
+  .form-bg-img {
+    min-height: 300px;
+  }
+  
+  .form-title-main {
+    font-size: 22px;
+  }
+  
+  .form-title-main .highlight {
+    font-size: 28px;
+  }
+  
+  .form-title-sub {
+    font-size: 16px;
+  }
+  .form-desc{
+    font-size: 16px;
+  }
+  .content-container {
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 48%;
+    max-width: none;
+  }
+  
+  .confidential-stamp {
+    width: 160px;
+    height: 70px;
+    top: 140px;
+  }
+  .privacy-note{
+    margin-left: 60px;
+  }
+
+  .btn-red.submit-btn{
+    width: 70%;
+    margin-left: 30px;
+   
+    }
+  
+  .mid-section-row {
+    flex-wrap: wrap;
+  }
+  
+  .mid-section-col {
+    width: 48%;
+    min-width: 300px;
+  }
+  
+    .mid-section-img-text h1,
+    .mid-section-img-text h2,
+    .mid-section-img-text p {
+      margin: 5px 0;
+      white-space: normal;
+  }
+  .mid-section-img-text p{
+    font-size: 16px;
+  }
+  .mid-section-img-text h2{
+    font-size: 16px;
+  }
+
+  .paste-img,
+  .pic1-img,
+  .order-img {
+    width: 120px;
+    height: 100px;
+  }
+  
+  .qqq-img,
+  .national-img {
+    width: 100px;
+    height: 80px;
+  }
+  
+  .horizontal-line1,
+  .horizontal-line2,
+  .horizontal-line3,
+  .horizontal-line4 {
+    width: 70%;
+    margin: 10px auto;
+  }
+  
+  .click-button1,
+  .click-button2,
+  .click-button3,
+  .click-button4 {
+    width: 50%;
+    margin: -9.5px auto;
+  }
+  
+  .mid-section-divider-horizontal{
+    width: 100%;
+  margin-top: 30px;
+  }
+  .practice-area-content{
+    font-size: 13px;
+    margin-left: -10px;
+  }
+  .learn-more-link{
+    font-size: 14px;
+  }
+}
+
