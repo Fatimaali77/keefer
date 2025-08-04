@@ -21,7 +21,7 @@ body {
   padding: 18px 0 10px 0;
 }
 .logo img { 
-  height: 120px;
+  height: 150px;
   margin-top: -20px;
   margin-bottom: -10px; 
 }
@@ -397,7 +397,7 @@ p {
   height: 1px;               
   background: #888;           
   margin: 0 auto;
-  margin-left:215px;
+  margin-left:180px;
   margin-top: -5px;
   border: none;
   display: block;
@@ -412,9 +412,9 @@ p {
   gap: 10px;
   border-radius: 2px;
   margin-top: -1px;
-  margin-left: auto;
+  margin-left: 250px;
  position: relative;
- margin-right: 10px;
+
 }
 
   .horizontal-line2 ,.horizontal-line3{
@@ -428,14 +428,8 @@ p {
     margin-top: -25px
   }
   .horizontal-line3{
-    width: 230px;
-    height: 1px;               
-    background: #888;           
-    margin: 0 auto;
-    border: none;
-    display: block;
-    margin-left:45px;
-    margin-top: -20px
+    width: 200px;
+    margin-top: -10px;
   }
 
   
@@ -446,9 +440,9 @@ p {
   padding: 8px 12px;
   font-size: 16px;
   font-weight: bold;
-  margin-block-end: 20px;
+  margin-block-end: 10px;
   width: fit-content;
-  margin-left: 100px;
+  margin-left: -100px;
 }
 
 .horizontal-line4 {
@@ -604,10 +598,11 @@ p {
   font-weight: bold;
   line-height: 1.1;
   margin-bottom: 4px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .sidebar-grey {
-  color: #888;
+  color: #4e4d4d;
   font-weight: bold;
 }
 
@@ -670,6 +665,7 @@ p {
   margin-bottom: 2px;
   margin-top: 10px;
   color: #333;
+  font-family:'Times New Roman', Times, serif
 }
 
 .follow-us-heading .sidebar-maroon {
@@ -763,10 +759,11 @@ p {
 }
 
 .learn-more-heading {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 18px;
   letter-spacing: 0.5px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .learn-more-grey {
@@ -789,7 +786,7 @@ p {
 
 .menu-area span {
   color: #888;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -838,19 +835,20 @@ p {
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 2px;
+ 
+}
+.mid-section-img-text h1{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .paste-img {
-  margin-top: 20px;
-  margin-left: 0;
-  width: 100px;
-  max-width: 100%;
-  height: auto;
+  margin-top: 70px;
+  margin-left: -70px;
+  height: 150px;
 } 
 
 .qqq-img{
-   margin: 0;
-  margin-left: 0;
+  margin-left: 30px;
   width: 140px;
   display: block;
   padding: 0;
@@ -860,24 +858,20 @@ p {
 }
 
 .national-img {
-  margin: 0;
-  margin-left: 0;
   width: 120px;
   display: block;
-  padding: 0;
-  border: none;
   max-width: 100%;
-  height: auto;
+  margin-left: 20px;
 }
 .pic1-img
  {
   margin: 0;
-  margin-left: 0;
+  margin-left: 40px;
   margin-top: 20px;
   width: 170px;
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 110px;
 }
 .order-img {
    
