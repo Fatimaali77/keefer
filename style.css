@@ -823,7 +823,7 @@ p {
 }
 
 .mid-section-divider-horizontal {
-  width: 103.5%;
+  width: 100%;
   height: 1px;
   background: #e0e0e0;
   
@@ -897,7 +897,8 @@ h1, p,.bold-red {
 }
 
 
-.mid-section-img-text h1,p {
+.mid-section-img-text h1,
+.mid-section-img-text p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1100,7 +1101,15 @@ h1, p,.bold-red {
     text-align: center;
     white-space: normal;
   }
-  
+  .mid-section-col {
+    flex: 1;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 250px;
+}
   .paste-img {
     margin: 10px auto;
     width: 80px;
@@ -1120,10 +1129,9 @@ h1, p,.bold-red {
   }
   
   .qqq-img {
-    margin: 10px auto;
     width: 100px;
     height: 80px;
-      margin-left: 60px;
+    margin-left: -30px;
   }
   
   .national-img {
@@ -1148,9 +1156,9 @@ h1, p,.bold-red {
   
   .click-button1{
    display: block;
-    margin: -8px;
+   margin: -8px;
     width: 40%;
-    margin-left: 100px;
+    margin-left: -40px;
   }
 
   .click-button2,
@@ -1181,6 +1189,310 @@ h1, p,.bold-red {
      text-align: center;
   }
 
+}
+
+/* MEDIUM TABLETS (501PX-767PX) */
+@media (min-width: 501px) and (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 767px;
+  }
+ 
+   .header-inner {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .logo img {
+    height: 100px;
+    margin-top: -10px ;
+    margin-left: -45px;
+    width: 130%;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin: 10px;
+    margin-right: 30px;
+
+  }
+  
+  .call-now {
+    font-size: 20px;
+  }
+  
+  .phone-number {
+    font-size: 45px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+  }
+  
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    padding: 8px 15px;
+    font-size: 13px;
+  }
+  
+  .hero {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .hero-left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .hero-right {
+    width: 100%;
+  }
+  
+  .hero-banner {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+  
+  .form-bg-img {
+    width: 100%;
+    height: 450px;
+    margin-left: 0;
+  }
+  
+  .form-text-overlay {
+    padding: 1px;
+    background: rgba(255,255,255,0.95);
+  }
+  
+  .questions-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+  }
+   .form-title-group {
+    margin-top: 40px;
+    margin-left: 15px;
+  }
+  
+  .questions-label {
+    font-size: 24px;
+  }
+  
+  .form-title-main,
+  .form-title-sub,
+  .form-desc {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .form-title-main {
+    font-size: 18px;
+  }
+  
+  .form-title-main .highlight {
+    font-size: 24px;
+  }
+  
+  .form-title-sub {
+    font-size: 16px;
+  }
+  
+  .form-desc {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  
+  .fake-field {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .fake-label {
+    margin: 0 10px 0 0;
+    white-space: nowrap;
+  }
+  
+  .fake-input {
+    width: 200px;
+    margin: 0;
+  }
+  
+  .fake-textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .privacy-note {
+    margin-left: 150px;
+    text-align: center;
+  }
+  
+  .btn-red.submit-btn {
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .confidential-stamp {
+    width: 160px;
+    height: 50px;
+    top: 140px;
+    right: 50px;
+  }
+  
+  .content-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .column {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .lower-content {
+    flex-direction: column;
+  }
+  
+  .practice-areas {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .right-sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .mid-section-row {
+    flex-direction: row;
+  }
+  
+  .mid-section-col {
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+  }
+  
+  .mid-section-img-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  
+  .mid-section-img-row {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .mid-section-col:last-child h1,
+  .mid-section-col:last-child p {
+      justify-content: center;
+  }
+  
+  .mid-section-img-text h1,
+  .mid-section-img-text h2,
+  .mid-section-img-text p {
+    white-space: normal;
+    margin: 5px 0;
+  }
+  
+  .paste-img {
+    width: 100px;
+    height: 120px;
+    margin: 0;
+  }
+  
+  .pic1-img {
+    width: 120px;
+    height: 90px;
+    margin: 0;
+  }
+  
+  .order-img {
+    width: 120px;
+    height: 90px;
+    margin: 0;
+  }
+  
+  .qqq-img {
+    width: 100px;
+    height: 80px;
+    margin-left: 30px;
+  }
+  
+  .national-img {
+    width: 100px;
+    height: 80px;
+   
+  }
+  
+  .mid-section-divider-horizontal {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .horizontal-line1,
+  .horizontal-line2,
+  .horizontal-line3,
+  .horizontal-line4 {
+    width: 90%;
+    margin: 10px auto;
+  }
+  
+  .click-button1,
+  .click-button2,
+  .click-button3,
+  .click-button4 {
+    width: 70%;
+    margin: -10px auto;
+    display: block;
+  }
+  
+  .practice-area-content {
+    font-size: 16px;
+  }
+  .learn-more-heading{
+  margin-left: 140px;
+  }
+  .menu-area{
+    margin-left: 150px;
+  }
+  .learn-more-link {
+    font-size: 14px;
+  }
+  
+  .main-title,
+  .h1-label {
+    font-size: 24px;
+
+  }
+  .main-content{
+    text-align: center;
+  }
 }
 
 /* SMALL TABLETS (768-891PX) */
@@ -1289,7 +1601,9 @@ h1, p,.bold-red {
     margin: 5px 0;
     white-space: normal;
   }
-  
+  .mid-section-img-text h1{
+    font-size:20px ;
+  }
   .mid-section-img-text p {
     font-size: 17px;
   }
@@ -1315,7 +1629,7 @@ h1, p,.bold-red {
     width: 90px;
     height: 70px;
   }
-  
+ 
   .horizontal-line1,
   .horizontal-line2,
   .horizontal-line3,
@@ -1332,10 +1646,6 @@ h1, p,.bold-red {
     margin: 10px auto;
   }
   
-  .mid-section-divider-horizontal {
-    width: 100%;
-    margin-top: 25px;
-  }
   
   .practice-area-content {
     font-size: 14px;
@@ -1482,6 +1792,250 @@ h1, p,.bold-red {
   }
   .learn-more-link{
     font-size: 14px;
+  }
+}
+/*For larger desktop*/
+@media (min-width: 1025px) and (max-width:1045px){
+  .container {
+    max-width: 1025px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .header-inner {
+    max-width: 1035px;
+    margin: 0 auto;
+    padding: 32px 0 18px 0;
+  }
+
+  .logo img {
+    height: 150px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+
+  .call-now {
+    font-size: 20px;
+    margin-left: -30px;
+  }
+  
+  .phone-number {
+    font-size: 42px;
+  }
+  
+  .tagline {
+    font-size: 17px;
+  }
+.form-bg-img {
+    width: 110%;
+    min-height: 280px;
+  }
+  
+    .questions-box {
+    position: absolute;
+    left: 0;
+    margin-left: -40px;
+    top: 3px;
+  }
+
+  .form-title-group {
+    margin-top: 22px;
+  }
+  
+  .form-title-main,
+  .form-title-sub,
+  .form-desc {
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .form-title-main {
+   font-size: 14px;
+  }
+  
+  .form-title-sub {
+    font-size: 14px;
+    text-align: left;
+  }
+  .form-title-main .highlight{
+    font-size: 22px;
+  }
+  .form-desc {
+    font-size: 12px;
+  margin-left: -50px;
+  }
+  
+  .confidential-stamp {
+    width: 150px;
+    height: 50px;
+    top: 140px;
+    right: 40px;
+  }
+  
+  .privacy-note {
+    margin-left: 20px;
+  }
+  
+  .btn-red.submit-btn {
+    width: 100%;
+    margin-left: -20px;
+  }
+  
+
+  .main-content {
+    width: 65%;
+    margin: 0 auto 0 0;
+    padding: 48px 60px 48px 80px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .right-sidebar {
+    width: 25%;
+    padding: 0 0 0 30px;
+    font-size: 1.1rem;
+  }
+
+ .practice-area-content{
+  font-size: 16px;
+ }
+
+  .practice-areas {
+    width:40%;
+    min-width: 200px;
+    padding: 32px 18px 32px 24px;
+  }
+
+  .main-title, .h1-label {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .sidebar-section {
+    font-size: 1.1rem;
+    padding: 0 0 18px 0;
+  }
+
+  .mid-section-row {
+    flex-direction: row;
+    gap: 32px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+   .mid-section-img-text {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .mid-section-img-row {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .mid-section-col:last-child h1,
+  .mid-section-col:last-child p {
+      justify-content: center;
+  }
+
+  .learn-more-heading{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1045px) and (max-width: 1345px) {
+
+  .btn-red.submit-btn{
+    width: 60%;
+  }
+  .mid-section-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mid-section-col {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 340px;
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 18px 10px;
+  }
+
+  .mid-section-img-text,
+  .mid-section-img-row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mid-section-img-text h1,
+  .mid-section-img-text p,
+  .mid-section-col h1,
+  .mid-section-col p {
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    margin: 6px 0;
+  }
+
+  .paste-img,
+  .pic1-img,
+  .order-img,
+  .qqq-img,
+  .national-img {
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+  
+  .mid-section-divider-horizontal{
+    width: 100%;
+  margin-top: 30px;
+  }
+
+  .mid-section-img-row {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  
+  .horizontal-line1,
+  .horizontal-line2,
+  .horizontal-line3,
+  .horizontal-line4 {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .click-button1,
+  .click-button2,
+  .click-button3,
+  .click-button4 {
+    width: 60%;
+    margin: -10px auto;
+    display: block;
+    font-size: 1rem;
   }
 }
 
