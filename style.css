@@ -1380,7 +1380,7 @@ h1, p,.bold-red {
   
   .right-sidebar {
     width: 100%;
-    padding: 15px;
+    padding: 35px;
   }
   
   .mid-section-row {
@@ -1476,10 +1476,11 @@ h1, p,.bold-red {
     font-size: 16px;
   }
   .learn-more-heading{
-  margin-left: 140px;
+    text-align: center;
   }
+
   .menu-area{
-    margin-left: 150px;
+  text-align:center ;
   }
   .learn-more-link {
     font-size: 14px;
@@ -1493,6 +1494,26 @@ h1, p,.bold-red {
   .main-content{
     text-align: center;
   }
+   .sidebar-col {
+    flex: 1 1 0 ;
+    min-width: 0 ;
+    max-width: 50% ;
+    display: flex ;
+    flex-direction: column ;
+    align-items: center;
+    gap: 12px ;
+  }
+    .right-sidebar {
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center ;
+    gap: 12px ;
+    width: 100% ;
+    max-width: 80%;
+    margin: 0 auto ;
+  }
+
 }
 
 /* SMALL TABLETS (768-891PX) */
@@ -1666,9 +1687,16 @@ h1, p,.bold-red {
     font-size: 14px;
     margin-left: -5px;
   }
-  
+  .learn-more{
+    text-align: center;
+  }
   .learn-more-link {
     font-size: 13px;
+    justify-content: center;
+  }
+  .menu-area{
+    margin-right: 35px;
+    text-align: center;
   }
 }
 
@@ -1781,7 +1809,7 @@ h1, p,.bold-red {
     flex-direction: column;
     align-items: center;
     position: relative;
-    }
+  }
 
   .paste-img,
   .pic1-img,
@@ -1815,7 +1843,7 @@ h1, p,.bold-red {
   }
   .click-button4{
     max-width: 80%;
-     margin: -9.5px auto;
+    margin: -9.5px auto;
   }
   
   .mid-section-divider-horizontal{
@@ -1963,7 +1991,7 @@ h1, p,.bold-red {
     padding: 12px 8px;
   }
 
-  .mid-section-img-text {
+   .mid-section-img-text {
     flex-direction: row;
     align-items: flex-start;
     gap: 12px;
@@ -2047,7 +2075,7 @@ h1, p,.bold-red {
     font-size: 15px;
     padding: 7px 11px;
   }
- 
+  
  
   .mid-section-col:last-child h1,
   .mid-section-col:last-child p {
@@ -2194,7 +2222,7 @@ h1, p,.bold-red {
     align-items: flex-start;
     gap: 12px;
   }
-  
+
   .mid-section-img-text h1 {
     font-size: 22px;
   }
@@ -2206,7 +2234,7 @@ h1, p,.bold-red {
   .mid-section-img-text p {
     font-size: 16px;
   }
-  
+
   .mid-section-img-row {
     display: flex;
     justify-content: flex-start;
@@ -2284,4 +2312,24 @@ h1, p,.bold-red {
   .learn-more-heading{
     text-align: center;
   }
+}
+.learn-more {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  max-width: 100vw !important;
+  margin: 0 auto !important;
+}
+.learn-more-heading {
+  text-align: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.menu-area {
+  text-align: center !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  justify-content: center !important;
 }
