@@ -1209,8 +1209,8 @@ h1, p,.bold-red {
   .logo img {
     height: 100px;
     margin-top: -10px ;
-    margin-left: -45px;
-    width: 130%;
+  margin-left: -75px;
+    width: 140%;
   }
   
   .contact-info {
@@ -1642,15 +1642,19 @@ h1, p,.bold-red {
   .horizontal-line2,
   .horizontal-line3,
   .horizontal-line4 {
-    width: 65%;
+    width: 80%;
     margin: 10px auto;
   }
   
   .click-button1,
   .click-button2,
-  .click-button3,
-  .click-button4 {
-    width: 55%;
+  .click-button3 {
+    width: 60%;
+    margin: -10px auto;
+  }
+  
+  .click-button4{
+    width: 70%;
     margin: -10px auto;
   }
   .mid-section-divider-horizontal{
@@ -1757,6 +1761,7 @@ h1, p,.bold-red {
     .mid-section-img-text h2,
     .mid-section-img-text p {
       white-space: normal;
+      margin-left: 50px;
   }
   .mid-section-img-text p{
     font-size: 16px;
@@ -1782,7 +1787,7 @@ h1, p,.bold-red {
   .pic1-img,
   .order-img {
     width: 120px;
-    height: 100px;
+    height: 120px;
   }
   
   .qqq-img,
@@ -1793,18 +1798,24 @@ h1, p,.bold-red {
   
   .horizontal-line1,
   .horizontal-line2,
-  .horizontal-line3,
-  .horizontal-line4 {
+  .horizontal-line3{
     width: 70%;
+    margin: 10px auto;
+  }
+  .horizontal-line4{
+     width: 60%;
     margin: 10px auto;
   }
   
   .click-button1,
   .click-button2,
-  .click-button3,
-  .click-button4 {
+  .click-button3{
     width: 50%;
     margin: -9.5px auto;
+  }
+  .click-button4{
+    max-width: 80%;
+     margin: -9.5px auto;
   }
   
   .mid-section-divider-horizontal{
