@@ -1586,46 +1586,54 @@ h1, p,.bold-red {
     margin-left: -20px;
   }
   
-  .mid-section-row {
-    flex-wrap: wrap;
-  }
   
   .mid-section-col {
-    width: 32%;
+    width: 40%;
     margin-bottom: 20px;
   }
   
   .mid-section-img-text h1,
   .mid-section-img-text h2,
   .mid-section-img-text p {
-    margin: 5px 0;
-    white-space: normal;
+    text-align: center;
+    padding-left: -50px;
   }
   .mid-section-img-text h1{
     font-size:20px ;
   }
   .mid-section-img-text p {
     font-size: 17px;
+   
   }
   
   .mid-section-img-text h2 {
     font-size: 17px;
   }
+    .mid-section-col:last-child h1,
+  .mid-section-col:last-child p {
+      justify-content: center;
+      font-size: 18px;
+  }
   
   .paste-img{
     width: 100px;
-    height: 100px;
-    margin-top: 40px;
+    height: 120px;
+    margin-top: 230px;
+    margin-left: -180px;
   }
 
   .pic1-img,
   .order-img {
     width: 110px;
     height: 90px;
+    margin-top: 90px;
+    margin-left: -180px;
   }
   
   .qqq-img,
   .national-img {
+    margin-top: 80px;
+    margin-bottom: 30px;
     width: 90px;
     height: 70px;
   }
@@ -1643,9 +1651,12 @@ h1, p,.bold-red {
   .click-button3,
   .click-button4 {
     width: 55%;
-    margin: 10px auto;
+    margin: -10px auto;
   }
-  
+  .mid-section-divider-horizontal{
+    width: 100%;
+  margin-top: 30px;
+  }
   
   .practice-area-content {
     font-size: 14px;
@@ -1707,9 +1718,6 @@ h1, p,.bold-red {
   .form-desc{
     font-size: 16px;
   }
-  .content-container {
-    flex-wrap: wrap;
-  }
   
   .column {
     width: 48%;
@@ -1717,17 +1725,22 @@ h1, p,.bold-red {
   }
   
   .confidential-stamp {
-    width: 160px;
-    height: 70px;
+    width: 140px;
+    height: 60px;
     top: 140px;
+  }
+  .form-bottom-row{
+    margin-top: -10px;
   }
   .privacy-note{
     margin-left: 60px;
+
   }
 
   .btn-red.submit-btn{
-    width: 70%;
+    width: 80%;
     margin-left: 30px;
+    margin-top: 2px;
    
     }
   
@@ -1743,7 +1756,6 @@ h1, p,.bold-red {
     .mid-section-img-text h1,
     .mid-section-img-text h2,
     .mid-section-img-text p {
-      margin: 5px 0;
       white-space: normal;
   }
   .mid-section-img-text p{
@@ -1752,6 +1764,19 @@ h1, p,.bold-red {
   .mid-section-img-text h2{
     font-size: 16px;
   }
+  .mid-section-col:last-child h1,
+  .mid-section-col:last-child p {
+    justify-content: center;
+    margin-left: 100px;
+  }
+    .mid-section-col {
+    flex: 1;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    }
 
   .paste-img,
   .pic1-img,
@@ -1787,23 +1812,23 @@ h1, p,.bold-red {
   margin-top: 30px;
   }
   .practice-area-content{
-    font-size: 13px;
+    font-size: 12px;
     margin-left: -10px;
   }
   .learn-more-link{
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 /*For larger desktop*/
-@media (min-width: 1025px) and (max-width:1045px){
+@media (min-width: 1025px) and (max-width:1040px){
   .container {
-    max-width: 1025px;
+    max-width: 1040px;
     margin: 0 auto;
-    padding: 0 24px;
+   
   }
 
   .header-inner {
-    max-width: 1035px;
+    max-width: 1040px;
     margin: 0 auto;
     padding: 32px 0 18px 0;
   }
@@ -1918,27 +1943,105 @@ h1, p,.bold-red {
 
   .mid-section-row {
     flex-direction: row;
-    gap: 32px;
-    max-width: 1300px;
+    gap: 20px;
+    max-width: 1040px;
     margin: 0 auto;
   }
 
-   .mid-section-img-text {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .mid-section-col {
+    padding: 12px 8px;
+  }
+
+  .mid-section-img-text {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .mid-section-img-text h1 {
+    font-size: 22px;
+  }
+  
+  .mid-section-img-text h2 {
+    font-size: 18px;
+  }
+  
+  .mid-section-img-text p {
+    font-size: 16px;
   }
   
   .mid-section-img-row {
     display: flex;
-    justify-content:center;
-    margin-bottom: 15px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
   }
   
+  .paste-img {
+    height: 130px;
+    margin-top: 60px;
+    margin-left: -50px;
+  }
+  
+  .pic1-img {
+    width: 150px;
+    height: 95px;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+  
+  .order-img {
+    width: 130px;
+    margin-left: -10px;
+    margin-top: 15px;
+  }
+  
+  .qqq-img {
+    width: 120px;
+    margin-left: 25px;
+  }
+  
+  .national-img {
+    width: 105px;
+    margin-left: 15px;
+  }
+  
+  .horizontal-line1 {
+    width: 200px;
+    margin-left: 120px;
+  }
+  
+  .horizontal-line2, .horizontal-line3 {
+    width: 170px;
+    margin-left: 25px;
+  }
+  
+  .horizontal-line4 {
+    width: 190px;
+    margin-left: 35px;
+  }
+  
+  .click-button1 {
+    margin-left: 160px;
+    font-size: 15px;
+  }
+  
+  .click-button2, .click-button3 {
+    margin-left: -90px;
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+  
+  .click-button4 {
+    margin-left: 80px;
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+ 
  
   .mid-section-col:last-child h1,
   .mid-section-col:last-child p {
       justify-content: center;
+      font-size: 18px;
   }
 
   .learn-more-heading{
@@ -1946,96 +2049,228 @@ h1, p,.bold-red {
   }
 }
 
-@media (min-width: 1045px) and (max-width: 1345px) {
-
-  .btn-red.submit-btn{
-    width: 60%;
+@media (min-width: 1041px) and (max-width: 1400px) {
+ .container {
+    max-width: 1400px;
+   
   }
-  .mid-section-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: center;
-    align-items: stretch;
+
+  .header-inner {
+    max-width: 1400px;
+  }
+
+  .logo img {
+    height: 150px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+  }
+
+  .call-now {
+    font-size: 20px;
+    margin-left: -30px;
+  }
+  
+  .phone-number {
+    font-size: 42px;
+  }
+  
+  .tagline {
+    font-size: 17px;
+  }
+.form-bg-img {
+    width: 110%;
+    min-height: 280px;
+  }
+  
+    .questions-box {
+    position: absolute;
+    left: 0;
+    margin-left: -40px;
+    top: 3px;
+  }
+
+  .form-title-group {
+    margin-top: 22px;
+  }
+  
+  .form-title-main,
+  .form-title-sub,
+  .form-desc {
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .form-title-main {
+   font-size: 14px;
+  }
+  
+  .form-title-sub {
+    font-size: 14px;
+    text-align: left;
+  }
+  .form-title-main .highlight{
+    font-size: 22px;
+  }
+  .form-desc {
+    font-size: 12px;
+  margin-left: -50px;
+  }
+  
+  .confidential-stamp {
+    width: 150px;
+    height: 50px;
+    top: 140px;
+    right: 40px;
+  }
+  
+  .privacy-note {
+    margin-left: 20px;
+  }
+  
+  .btn-red.submit-btn {
     width: 100%;
+    margin-left: -20px;
+  }
+  
+
+  .main-content {
+    width: 65%;
+    margin: 0 auto 0 0;
+    padding: 48px 60px 48px 80px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .right-sidebar {
+    width: 25%;
+    padding: 0 0 0 30px;
+    font-size: 1.1rem;
+  }
+
+ .practice-area-content{
+  font-size: 16px;
+ }
+
+  .practice-areas {
+    width:40%;
+    min-width: 200px;
+    padding: 32px 18px 32px 24px;
+  }
+
+  .main-title, .h1-label {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .sidebar-section {
+    font-size: 1.1rem;
+    padding: 0 0 18px 0;
+  }
+
+  .mid-section-row {
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 
   .mid-section-col {
-    flex: 1 1 300px;
-    min-width: 280px;
-    max-width: 340px;
-    margin: 0 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #fff;
-    box-sizing: border-box;
-    padding: 18px 10px;
+    padding: 12px 8px;
   }
 
-  .mid-section-img-text,
-  .mid-section-img-row {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .mid-section-img-text {
+    flex-direction: row;
+    align-items: flex-start;
     gap: 12px;
   }
-
-  .mid-section-img-text h1,
-  .mid-section-img-text p,
-  .mid-section-col h1,
-  .mid-section-col p {
-    font-size: 1.1rem;
-    text-align: center;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: unset;
-    margin: 6px 0;
-  }
-
-  .paste-img,
-  .pic1-img,
-  .order-img,
-  .qqq-img,
-  .national-img {
-    max-width: 90%;
-    height: auto;
-    margin: 0 auto 10px auto;
-    display: block;
+  
+  .mid-section-img-text h1 {
+    font-size: 22px;
   }
   
-  .mid-section-divider-horizontal{
-    width: 100%;
-  margin-top: 30px;
+  .mid-section-img-text h2 {
+    font-size: 18px;
   }
-
+  
+  .mid-section-img-text p {
+    font-size: 16px;
+  }
+  
   .mid-section-img-row {
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
   }
-
   
-  .horizontal-line1,
-  .horizontal-line2,
-  .horizontal-line3,
+  .paste-img {
+    height: 130px;
+    margin-top: 60px;
+    margin-left: -50px;
+  }
+  
+  .pic1-img {
+    width: 150px;
+    height: 95px;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+  
+  .order-img {
+    width: 130px;
+    margin-left: -10px;
+    margin-top: 15px;
+  }
+  
+  .qqq-img {
+    width: 120px;
+    margin-left: 25px;
+  }
+  
+  .national-img {
+    width: 105px;
+    margin-left: 15px;
+  }
+  
+  .horizontal-line1 {
+    width: 200px;
+    margin-left: 120px;
+  }
+  
+  .horizontal-line2, .horizontal-line3 {
+    width: 170px;
+    margin-left: 25px;
+  }
+  
   .horizontal-line4 {
-    width: 80%;
-    margin: 10px auto;
+    width: 190px;
+    margin-left: 35px;
+  }
+  
+  .click-button1 {
+    margin-left: 160px;
+    font-size: 15px;
+  }
+  
+  .click-button2, .click-button3 {
+    margin-left: -150px;
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+  
+  .click-button4 {
+    margin-left: 80px;
+    font-size: 15px;
+    padding: 7px 11px;
+  }
+ 
+ 
+  .mid-section-col:last-child h1,
+  .mid-section-col:last-child p {
+      justify-content: center;
+      font-size: 18px;
   }
 
-  .click-button1,
-  .click-button2,
-  .click-button3,
-  .click-button4 {
-    width: 60%;
-    margin: -10px auto;
-    display: block;
-    font-size: 1rem;
+  .learn-more-heading{
+    text-align: center;
   }
 }
-
