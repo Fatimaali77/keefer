@@ -999,9 +999,9 @@ h1, p,.bold-red {
   }
   
   .form-bg-img {
-    width: 115%;
+    width: 150%;
     height: 30rem;
-
+    margin: 10px 0;
   }
   
   .form-text-overlay {
